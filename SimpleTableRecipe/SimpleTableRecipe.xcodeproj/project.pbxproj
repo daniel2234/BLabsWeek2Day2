@@ -14,6 +14,7 @@
 		65B17E9E1ADDA3AF00CD2EBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B17E9C1ADDA3AF00CD2EBF /* LaunchScreen.xib */; };
 		65B17EAA1ADDA3AF00CD2EBF /* SimpleTableRecipeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B17EA91ADDA3AF00CD2EBF /* SimpleTableRecipeTests.m */; };
 		65B17EB61ADDA69300CD2EBF /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B17EB51ADDA69300CD2EBF /* CustomTableViewController.m */; };
+		65B17EC01ADDB5DF00CD2EBF /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B17EBF1ADDB5DF00CD2EBF /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		65B17EA91ADDA3AF00CD2EBF /* SimpleTableRecipeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableRecipeTests.m; sourceTree = "<group>"; };
 		65B17EB41ADDA69300CD2EBF /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
 		65B17EB51ADDA69300CD2EBF /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
+		65B17EBE1ADDB5DF00CD2EBF /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		65B17EBF1ADDB5DF00CD2EBF /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				65B17E911ADDA3AF00CD2EBF /* AppDelegate.h */,
 				65B17E921ADDA3AF00CD2EBF /* AppDelegate.m */,
 				65B17E971ADDA3AF00CD2EBF /* Main.storyboard */,
+				65B17EBE1ADDB5DF00CD2EBF /* CustomTableViewCell.h */,
+				65B17EBF1ADDB5DF00CD2EBF /* CustomTableViewCell.m */,
 				65B17EB41ADDA69300CD2EBF /* CustomTableViewController.h */,
 				65B17EB51ADDA69300CD2EBF /* CustomTableViewController.m */,
 				65B17E9A1ADDA3AF00CD2EBF /* Images.xcassets */,
@@ -221,6 +226,7 @@
 			files = (
 				65B17EB61ADDA69300CD2EBF /* CustomTableViewController.m in Sources */,
 				65B17E931ADDA3AF00CD2EBF /* AppDelegate.m in Sources */,
+				65B17EC01ADDB5DF00CD2EBF /* CustomTableViewCell.m in Sources */,
 				65B17E901ADDA3AF00CD2EBF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
