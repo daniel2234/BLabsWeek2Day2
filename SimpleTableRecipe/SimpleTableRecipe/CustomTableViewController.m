@@ -67,6 +67,17 @@
 }
 
 
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString* selectRecipe = [recipeNames objectAtIndex:indexPath.row];
+    UIAlertView *messageAlert = [[UIAlertView alloc]initWithTitle:@"Row Selected" message:selectRecipe delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    [messageAlert show];
+    
+
+
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
