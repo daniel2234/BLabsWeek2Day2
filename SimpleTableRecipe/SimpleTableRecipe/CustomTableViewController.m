@@ -73,8 +73,9 @@
     UIAlertView *messageAlert = [[UIAlertView alloc]initWithTitle:@"Row Selected" message:selectRecipe delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
     [messageAlert show];
-    
-
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
 }
 
