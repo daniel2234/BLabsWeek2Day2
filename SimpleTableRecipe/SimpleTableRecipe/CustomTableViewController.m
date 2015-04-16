@@ -23,15 +23,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
-    recipeNames=[NSMutableArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with MMQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini",nil];
-    recipeImages = [NSMutableArray arrayWithObjects:@"egg_benedict.jpg", @"mushroom_risotto.jpg", @"full_breakfast.jpg",
-                      @"hamburger.jpg", @"ham_and_egg_sandwich.jpg", @"creme_brelee.jpg",
-                      @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg",
-                      @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg",
-                      @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg",
-                      @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg",nil];
-    recipeTimes = [NSMutableArray arrayWithObjects:@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",@"20 min",nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc]initWithContentsOfFile:path];
+    recipeNames = [dict objectForKey:@"Name"];
+    recipeImages = [dict objectForKey:@"Image"];
+    recipeTimes = [dict objectForKey:@"Prep Time"];
+    
+//    recipeNames=[NSMutableArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with MMQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini",nil];
+//    recipeImages = [NSMutableArray arrayWithObjects:@"egg_benedict.jpg", @"mushroom_risotto.jpg", @"full_breakfast.jpg",
+//                      @"hamburger.jpg", @"ham_and_egg_sandwich.jpg", @"creme_brelee.jpg",
+//                      @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg",
+//                      @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg",
+//                      @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg",
+//                      @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg",nil];
+//    recipeTimes = [NSMutableArray arrayWithObjects:@"30 min",@"30 min",@"20 min",@"30 min",@"10 min",@"1 hour",@"45 min",@"5 min",@"30 min",@"8 min",@"20 min",@"5 min",@"1.5 hours",@"4 hours",@"10 min",nil];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -76,7 +82,7 @@
 }
 
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString* selectRecipe = [recipeNames objectAtIndex:indexPath.row];
     UIAlertView *messageAlert = [[UIAlertView alloc]initWithTitle:@"Row Selected" message:selectRecipe delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -104,7 +110,7 @@
     [recipeImages removeObjectAtIndex:indexPath.row];
     [recipeTimes removeObjectAtIndex:indexPath.row];
     
-    [tableView reloadData];
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 /*
 // Override to support conditional editing of the table view.

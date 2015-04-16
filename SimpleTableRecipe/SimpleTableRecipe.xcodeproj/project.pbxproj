@@ -15,6 +15,7 @@
 		65B17EAA1ADDA3AF00CD2EBF /* SimpleTableRecipeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B17EA91ADDA3AF00CD2EBF /* SimpleTableRecipeTests.m */; };
 		65B17EB61ADDA69300CD2EBF /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B17EB51ADDA69300CD2EBF /* CustomTableViewController.m */; };
 		65B17EC01ADDB5DF00CD2EBF /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B17EBF1ADDB5DF00CD2EBF /* CustomTableViewCell.m */; };
+		65B17FA11AE0792D00CD2EBF /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B17FA01AE0792D00CD2EBF /* recipes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		65B17EB51ADDA69300CD2EBF /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		65B17EBE1ADDB5DF00CD2EBF /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		65B17EBF1ADDB5DF00CD2EBF /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		65B17FA01AE0792D00CD2EBF /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = recipes.plist; path = ../recipes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				65B17EB51ADDA69300CD2EBF /* CustomTableViewController.m */,
 				65B17E9A1ADDA3AF00CD2EBF /* Images.xcassets */,
 				65B17E9C1ADDA3AF00CD2EBF /* LaunchScreen.xib */,
+				65B17FA01AE0792D00CD2EBF /* recipes.plist */,
 				65B17E8D1ADDA3AF00CD2EBF /* Supporting Files */,
 			);
 			path = SimpleTableRecipe;
@@ -206,6 +209,7 @@
 			files = (
 				65B17E991ADDA3AF00CD2EBF /* Main.storyboard in Resources */,
 				65B17E9E1ADDA3AF00CD2EBF /* LaunchScreen.xib in Resources */,
+				65B17FA11AE0792D00CD2EBF /* recipes.plist in Resources */,
 				65B17E9B1ADDA3AF00CD2EBF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +424,7 @@
 				65B17EAF1ADDA3AF00CD2EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65B17EB01ADDA3AF00CD2EBF /* Build configuration list for PBXNativeTarget "SimpleTableRecipeTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +433,7 @@
 				65B17EB21ADDA3AF00CD2EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
