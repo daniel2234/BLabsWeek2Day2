@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D9A8A290-56C5-43B0-A8F1-A869FD0C4A39</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SimpleTableRecipe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D32662ED45D8924830B867AFA74472FC454589D5</key>
+		<string>https://github.com/daniel2234/BLabsWeek2Day2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SimpleTableRecipe/SimpleTableRecipe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D32662ED45D8924830B867AFA74472FC454589D5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/daniel2234/BLabsWeek2Day2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D32662ED45D8924830B867AFA74472FC454589D5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D32662ED45D8924830B867AFA74472FC454589D5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BLabsDay7</string>
+		</dict>
+	</array>
+</dict>
+</plist>
