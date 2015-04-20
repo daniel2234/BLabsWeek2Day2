@@ -82,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hh3-JO-Ocg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="380"/>
+            <point key="canvasLocation" x="1857" y="380"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="39f-vJ-fMk">
@@ -115,11 +115,57 @@
                     </tabBar>
                     <connections>
                         <segue destination="tKL-9m-X7i" kind="relationship" relationship="viewControllers" id="AQq-Ss-JqQ"/>
+                        <segue destination="LrM-1w-yjX" kind="relationship" relationship="viewControllers" id="uvk-An-dFW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Kp-29-bjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="380"/>
+            <point key="canvasLocation" x="131" y="658"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XSl-Bb-5jx">
+            <objects>
+                <navigationController id="LrM-1w-yjX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="szb-Dn-siq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8qq-tQ-rko">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jHf-j4-KBI" kind="relationship" relationship="rootViewController" id="uxb-jW-SgO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phQ-dl-h22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="1075"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="hLU-iF-uDR">
+            <objects>
+                <viewController id="jHf-j4-KBI" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k6Q-Il-ocj"/>
+                        <viewControllerLayoutGuide type="bottom" id="rJb-m2-HQP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G2u-fV-562" customClass="About">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3Q-Cp-OwJ">
+                                <rect key="frame" x="0.0" y="-5" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NaL-ed-G8X"/>
+                    <connections>
+                        <outlet property="webView" destination="K3Q-Cp-OwJ" id="Ehr-tu-h6t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMn-UC-lu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="1076"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

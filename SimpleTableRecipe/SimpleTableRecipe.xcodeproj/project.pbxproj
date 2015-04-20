@@ -17,6 +17,9 @@
 		65B17EC01ADDB5DF00CD2EBF /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B17EBF1ADDB5DF00CD2EBF /* CustomTableViewCell.m */; };
 		65B17FA11AE0792D00CD2EBF /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65B17FA01AE0792D00CD2EBF /* recipes.plist */; };
 		65FB3CF41AE56ECC005DD1B4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FB3CF31AE56ECC005DD1B4 /* DetailViewController.m */; };
+		65FB3CF71AE58248005DD1B4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FB3CF61AE58248005DD1B4 /* AboutViewController.m */; };
+		65FB3CFA1AE582BE005DD1B4 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 65FB3CF81AE582BE005DD1B4 /* about.html */; };
+		65FB3CFB1AE582BE005DD1B4 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65FB3CF91AE582BE005DD1B4 /* about.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		65B17FA01AE0792D00CD2EBF /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = recipes.plist; path = ../recipes.plist; sourceTree = "<group>"; };
 		65FB3CF21AE56ECC005DD1B4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		65FB3CF31AE56ECC005DD1B4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		65FB3CF51AE58248005DD1B4 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ../AboutViewController.h; sourceTree = "<group>"; };
+		65FB3CF61AE58248005DD1B4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../AboutViewController.m; sourceTree = "<group>"; };
+		65FB3CF81AE582BE005DD1B4 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = "../../../../../../Downloads/book-tabbar-about/about.html"; sourceTree = "<group>"; };
+		65FB3CF91AE582BE005DD1B4 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpg; path = "../../../../../../Downloads/book-tabbar-about/about.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +96,8 @@
 		65B17E8C1ADDA3AF00CD2EBF /* SimpleTableRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				65FB3CF51AE58248005DD1B4 /* AboutViewController.h */,
+				65FB3CF61AE58248005DD1B4 /* AboutViewController.m */,
 				65B17E911ADDA3AF00CD2EBF /* AppDelegate.h */,
 				65B17E921ADDA3AF00CD2EBF /* AppDelegate.m */,
 				65B17E971ADDA3AF00CD2EBF /* Main.storyboard */,
@@ -109,6 +118,8 @@
 		65B17E8D1ADDA3AF00CD2EBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				65FB3CF81AE582BE005DD1B4 /* about.html */,
+				65FB3CF91AE582BE005DD1B4 /* about.jpg */,
 				65B17E8E1ADDA3AF00CD2EBF /* Info.plist */,
 				65B17E8F1ADDA3AF00CD2EBF /* main.m */,
 			);
@@ -215,7 +226,9 @@
 				65B17E991ADDA3AF00CD2EBF /* Main.storyboard in Resources */,
 				65B17E9E1ADDA3AF00CD2EBF /* LaunchScreen.xib in Resources */,
 				65B17FA11AE0792D00CD2EBF /* recipes.plist in Resources */,
+				65FB3CFA1AE582BE005DD1B4 /* about.html in Resources */,
 				65B17E9B1ADDA3AF00CD2EBF /* Images.xcassets in Resources */,
+				65FB3CFB1AE582BE005DD1B4 /* about.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FB3CF71AE58248005DD1B4 /* AboutViewController.m in Sources */,
 				65FB3CF41AE56ECC005DD1B4 /* DetailViewController.m in Sources */,
 				65B17EB61ADDA69300CD2EBF /* CustomTableViewController.m in Sources */,
 				65B17E931ADDA3AF00CD2EBF /* AppDelegate.m in Sources */,
