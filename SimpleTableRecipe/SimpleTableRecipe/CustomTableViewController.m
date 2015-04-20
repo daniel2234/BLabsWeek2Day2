@@ -7,6 +7,7 @@
 //
 #import "CustomTableViewCell.h"
 #import "CustomTableViewController.h"
+#import "DetailViewController.h"
 
 @interface CustomTableViewController ()
 
@@ -112,6 +113,15 @@
     
     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DetailViewController *destViewController = segue.destinationViewController;
+        destViewController.recipeName = [recipeNames objectAtIndex:indexPath.row];
+    }
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
