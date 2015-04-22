@@ -20,6 +20,7 @@
 		65FB3CF71AE58248005DD1B4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FB3CF61AE58248005DD1B4 /* AboutViewController.m */; };
 		65FB3CFA1AE582BE005DD1B4 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 65FB3CF81AE582BE005DD1B4 /* about.html */; };
 		65FB3CFB1AE582BE005DD1B4 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65FB3CF91AE582BE005DD1B4 /* about.jpg */; };
+		65FB3D671AE7E817005DD1B4 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FB3D661AE7E817005DD1B4 /* Recipe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		65FB3CF61AE58248005DD1B4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../AboutViewController.m; sourceTree = "<group>"; };
 		65FB3CF81AE582BE005DD1B4 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = "../../../../../../Downloads/book-tabbar-about/about.html"; sourceTree = "<group>"; };
 		65FB3CF91AE582BE005DD1B4 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpg; path = "../../../../../../Downloads/book-tabbar-about/about.jpg"; sourceTree = "<group>"; };
+		65FB3D651AE7E817005DD1B4 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		65FB3D661AE7E817005DD1B4 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 		65B17E811ADDA3AF00CD2EBF = {
 			isa = PBXGroup;
 			children = (
+				65FB3D651AE7E817005DD1B4 /* Recipe.h */,
+				65FB3D661AE7E817005DD1B4 /* Recipe.m */,
 				65B17E8C1ADDA3AF00CD2EBF /* SimpleTableRecipe */,
 				65B17EA61ADDA3AF00CD2EBF /* SimpleTableRecipeTests */,
 				65B17E8B1ADDA3AF00CD2EBF /* Products */,
@@ -247,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65FB3CF71AE58248005DD1B4 /* AboutViewController.m in Sources */,
+				65FB3D671AE7E817005DD1B4 /* Recipe.m in Sources */,
 				65FB3CF41AE56ECC005DD1B4 /* DetailViewController.m in Sources */,
 				65B17EB61ADDA69300CD2EBF /* CustomTableViewController.m in Sources */,
 				65B17E931ADDA3AF00CD2EBF /* AppDelegate.m in Sources */,

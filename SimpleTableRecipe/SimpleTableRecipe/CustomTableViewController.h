@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomTableViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
+@interface CustomTableViewController : UITableViewController<UITableViewDelegate,UITableViewDataSource>
 @end
